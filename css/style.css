@@ -1,0 +1,349 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
+body {
+    background-image: url(../img/fondo.png);
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+/* Control del tamaño del logo */
+/* Tamaño del logo para pantallas grandes */
+.logo-custom {
+    width: 60%; /* Ancho grande en pantallas grandes */
+    height: auto; /* Mantener la proporción */
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 1200px) {
+    .logo-custom {
+        width: 100%; /* Reducir ligeramente el ancho en pantallas medianas */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .logo-custom {
+        width: 100%; /* Reducir más el ancho en pantallas pequeñas */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .logo-custom {
+        width: 100%; /* Aumentar el ancho para pantallas muy pequeñas */
+    }
+}
+
+
+/* Estilo del Navbar */
+.navbar {
+    background-color: #1713F4 !important;
+}
+
+/* Estilos del enlace del navbar */
+.navbar .nav-link {
+    color: white !important;
+    font-size: 1.3rem;
+    padding-right: 50px;
+}
+
+/* Estilo para el logo del navbar */
+.navbar-brand img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* Eliminar subrayado al pasar el ratón */
+.navbar .nav-link:hover {
+    color: #FFD700 !important;
+    text-decoration: none !important;
+}
+
+/* Responsive: Alinear verticalmente el menú cuando esté colapsado */
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+/* Estilo general del Navbar */
+.navbar-nav .nav-item {
+    margin-right: 30px; /* Aumentar el margen derecho para separar los <li> */
+}
+
+/* Eliminar el margen en el último elemento */
+.navbar-nav .nav-item:last-child {
+    margin-right: 0; /* Evita que el último enlace tenga un margen adicional */
+}
+
+
+/* Estilo para la sección banner */
+.banner {
+    text-align: center; /* Centrar el texto */
+    padding: 60px 20px; /* Espaciado interno */
+    margin: 40px 0; /* Espaciado externo */
+}
+
+.banner h1 {
+    font-size: 2.5rem; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio entre el título y el párrafo */
+    color: #000; /* Color del título */
+}
+
+.banner p {
+    font-size: 1.2rem; /* Tamaño del texto */
+    line-height: 1.6; /* Altura de línea para facilitar la lectura */
+    max-width: 800px; /* Ancho máximo del párrafo */
+    margin: 0 auto; /* Centrar el párrafo */
+    color: #000000; /* Color del texto */
+}
+
+
+/* Estilo para el footer */
+.footer {
+    background-color: #0000FF; /* Fondo azul intenso */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 15px 0; /* Espaciado vertical */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    margin-top: 50px ; /* Hace que el footer se empuje hasta el final */
+    bottom: 0;
+    position: absolute;
+}
+
+.footer p {
+    margin: 0; /* Elimina el margen del párrafo */
+    font-size: 0.9rem; /* Tamaño de fuente ligeramente más pequeño */
+}
+
+/* Footer superior general */
+.footer-superior {
+    color: #0000FF;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center; /* Asegura que todo el contenido se centre */
+    margin-top: 40px; /* Ajusta el valor para la separación que necesites */
+}
+
+/* Estilo del logo del footer superior */
+.logo-footer-superior {
+    max-width: 150px;
+    margin: 0 auto 20px auto; /* Centra el logo */
+    display: block; /* Asegura que el logo sea un bloque centrado */
+}
+
+/* Títulos de las secciones del footer superior */
+.footer-superior-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0000FF;
+    margin-bottom: 15px;
+}
+
+/* Lista sin estilo en el footer superior */
+.footer-superior ul {
+    padding-left: 0;
+    list-style: none; /* Elimina los puntos de la lista */
+    text-align: center; /* Centra las listas */
+}
+
+.footer-superior ul li {
+    margin-bottom: 10px;
+}
+
+.footer-superior ul li a {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+.footer-superior ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de los íconos del contacto en el footer superior */
+.footer-superior ul li i {
+    margin-right: 10px;
+    color: #0000FF;
+}
+
+
+@media (max-width: 768px) {
+    .footer-superior .row {
+        text-align: center; /* Asegura que el contenido esté centrado en móviles */
+    }
+
+    .footer-superior ul {
+        text-align: center; /* Centra las listas en dispositivos móviles */
+    }
+
+    .footer-superior ul li {
+        display: inline-block; /* Opcional, para alinear los ítems en línea */
+        margin-right: 15px; /* Espacio entre ítems de la lista en móviles */
+    }
+}
+
+
+/* Registro*/
+/* Registro*/
+/* Registro*/
+/* Registro*/
+
+
+/* Columna izquierda: logo y texto */
+.texto-registro p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Columna derecha: botones de registro */
+.botones-registro {
+    text-align: right;
+}
+
+.botones-registro .btn {
+    display: block;
+    width: 100%;
+    max-width: 250px; /* Tamaño máximo de los botones */
+    margin: 10px 0; /* Espaciado entre botones */
+    padding: 10px 10px;
+    
+}
+
+.botones-registro .registro-link {
+    display: block;
+    margin: 20px auto; /* Centrarlo horizontalmente */
+    color: #F47A45;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Estilo del botón de iniciar sesión */
+.btn-primary {
+    background-color: #ff6205; /* Color de fondo del botón */
+    border-color: #ff6205; /* Color del borde */
+    color: white; /* Color del texto */
+    border-radius: 50px; /* Hacer el botón redondeado */
+    font-weight: bold; /* Poner el texto en negrilla */
+    padding: 10px 20px; /* Ajustar el relleno interno para un tamaño adecuado */
+}
+
+/* Hover (cuando el usuario pasa el ratón sobre el botón) */
+.btn-primary:hover {
+    background-color: #ff6205; /* Color de fondo al hacer hover */
+    border-color: #ff6205; /* Borde al hacer hover */
+    color: white; /* El texto sigue en blanco */
+}
+
+/* Estilo de los botones de Google y Facebook */
+.btn-outline-secondary {
+    border-radius: 75px; /* Hacer los botones redondeados */
+    font-weight: bold; /* Poner el texto en negrilla */
+    padding: 10px 20px; /* Ajustar el relleno interno */
+    background-color: #F1F1F1; /* Color de fondo gris claro */
+    color: black; /* Texto en negro */
+}
+
+/* Hover para los botones de Google y Facebook */
+.btn-outline-secondary:hover {
+    background-color: #E0E0E0; /* Fondo gris más oscuro en hover */
+    color: black; /* Texto en negro */
+}
+
+
+.botones-registro .icono {
+    width: 20px;
+    margin-right: 10px; /* Espaciado entre icono y texto */
+}
+
+.logo-registro {
+    width: 100%; /* Puedes ajustar esto a un porcentaje adecuado */
+    height: 475px; /* Para mantener la proporción del logo */
+}
+
+/* Tamaño del ícono dentro de los botones */
+.icono {
+    width: 30px;  /* Aumenta el ancho del ícono */
+    height: 30px; /* Aumenta la altura del ícono */
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    vertical-align: middle; /* Alinea verticalmente el ícono con el texto */
+    object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+}
+
+/* Estilo de la sección de registro para pantallas grandes */
+.registro {
+    padding: 50px 0; /* Espaciado interno */
+}
+
+/* Logo y texto */
+.texto-registro {
+    max-width: 900px; /* Ancho máximo del contenido de texto */
+    text-align: left;
+}
+
+.botones-registro .registro-link {
+    display: block;
+    margin-top: 20px;
+    color: #F47A45 !important; /* Usa !important para asegurar que el color se aplique */
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .registro {
+        text-align: center; /* Centrar todo en pantallas pequeñas */
+    }
+
+    .texto-registro {
+        margin-bottom: 20px; /* Espaciado entre texto y botones */
+        text-align: center; /* Centrar texto en pantallas pequeñas */
+    }
+
+    .botones-registro {
+        text-align: center; /* Centrar botones en pantallas pequeñas */
+    }
+
+    .btn {
+        width: 100%; /* Botones ocuparán todo el ancho en móviles */
+        max-width: 300px; /* Ancho máximo del botón */
+    }
+}
+
+/* Consejos */
+/* Consejos */
+/* Consejos */
+/* Consejos */
+
+.consejos-banner {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+    max-width: 600px; /* Establece un ancho máximo para la imagen */
+    height: auto; /* Asegura que la altura se ajuste proporcionalmente */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+.texto-destacado {
+    font-size: 1.5rem; /* Ajusta el tamaño del texto */
+    color: #000; /* Puedes cambiar el color si lo deseas */
+}
+
+/* Margen inferior para las tarjetas en pantallas pequeñas */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px; /* Añade un margen inferior de 20px para separar las tarjetas */
+    }
+}
+
